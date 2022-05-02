@@ -1,0 +1,98 @@
+*{
+    font-family: 'Dancing Script', cursive;
+    font-size: 13pt;
+}
+h1{
+    font-size: 20pt;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom:10px;
+    color: black;
+    
+}
+
+h2{
+    font-family: 'Orbitron', sans-serif;
+}
+
+body{
+    /*background: linear-gradient(to right bottom, white,#F7CAC9,  white);*/
+    background-color: hsl(215, 28%, 65%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.wrapper
+{
+outline-style: solid;
+outline-color: grey;
+border-radius: 7px;
+padding: 15px;
+width: 380px;
+background: hsl(0, 0%, 89%);
+padding-top: 0;
+}
+
+.information{
+    background-color: white;
+    border: 1px solid grey;
+    width: 360px;
+    height: 200px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+.bill-amount, .personen{
+    float: left;
+    width: 50%; 
+    padding: 20px;
+    box-sizing: border-box;
+    padding-left: 25px;
+    margin-bottom: 10px;
+    padding-top: 0;
+    padding-left: 5px;
+}
+.bill-amount{
+    padding-right: 5px;
+}
+.bill-amount p, .personen p{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.bill-amount p{
+    padding-left: 3px;
+}
+.bill-amount svg, .personen svg{
+    float: left;
+    height: 22px;
+    /*color: grey;*/
+}
+.personen svg{
+    height: 26px;
+}
+
+.bill-amount input, .personen input{
+    width: 125px;
+    border: none;
+  border-bottom: 1px solid grey;
+}
+.personen{
+    padding-right: 5px;
+    padding-left: 10px;
+    
+}
+.output{
+    background-color: white;
+    border: 1px solid grey;
+    width: 360px;
+    height: 200px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
