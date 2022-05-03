@@ -40,7 +40,7 @@ padding-top: 0;
     background-color: white;
     border: 1px solid grey;
     width: 360px;
-    height: 200px;
+    height: 300px;
     margin-bottom: 20px;
     margin-left: 10px;
     margin-right: 10px;
@@ -58,10 +58,12 @@ padding-top: 0;
 }
 .bill-amount{
     padding-right: 5px;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
 }
 .bill-amount p, .personen p{
     margin-top: 10px;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
 }
 .bill-amount p{
     padding-left: 3px;
@@ -83,7 +85,8 @@ padding-top: 0;
 .personen{
     padding-right: 5px;
     padding-left: 10px;
-    
+    padding-bottom: 10px;
+    margin-bottom: 8px;
 }
 .output{
     background-color: white;
@@ -96,3 +99,48 @@ padding-top: 0;
     border-radius: 5px;
 }
 
+.tip-range{
+    margin-top: 55px;
+    align-items: center;
+    
+}
+.tip-range p{
+    margin-top: 0;
+    margin-bottom: 2px;
+    padding-left: 10px;
+    height: 45px;
+
+}
+.tip-range input{
+    width: 290px;
+    height: 15px;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 0;
+    color: grey;
+    
+}
+#textInput{
+    width: 20px;
+    height: 10px;
+    margin-left: 0;
+  
+}
+.round-up , .round-off{
+    float: left;
+    width: 50%; 
+    padding: 20px;
+    box-sizing: border-box;
+    padding-left: 25px;
+    margin-bottom: 10px;
+    padding-top: 0;
+    padding-left: 5px;
+}
+.round-up{
+    padding-right: 0;
+    padding-left: 50px;
+}
+.round-up button{
+    padding-right: 0;
+    padding-left: 50px;
+}

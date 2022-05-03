@@ -42,6 +42,22 @@
 
             <input type="number" id="personen" placeholder="4">
             </div>
+
+            <div class="tip-range">
+            <p>Select Tip %</p>
+            <input type="range" name="rangeInput" min="0" max="100" onchange="updateTextInput(this.value);"><input type="text" id="textInput" value="">
+            </div>
+
+
+            <div class="round-up">
+            <button class="btn btn-secondary"> Round off </button> 
+            </div>
+
+            <div class="round-off">
+            <button> Round off </button> 
+            </div>
+
+    
         </div>
 
         <div class="output">
@@ -50,5 +66,4 @@
     </div>
     <!--<input type="text" id="myInput" /> -->
 </body>
-
 </html>
