@@ -99,34 +99,20 @@ padding-top: 0;
     border-radius: 5px;
 }
 
-.tip-range{
-    margin-top: 55px;
-    align-items: center;
-    
-}
-.tip-range p{
-    margin-top: 0;
-    margin-bottom: 2px;
-    padding-left: 10px;
-    height: 45px;
+
+.lbl p{
+    margin-left: 5px;
+    margin-bottom: 5px;
 
 }
-.tip-range input{
-    width: 290px;
-    height: 15px;
-    margin-left: 10px;
-    margin-top: 5px;
-    margin-bottom: 0;
-    color: grey;
-    
-}
+
 #textInput{
     width: 20px;
     height: 10px;
     margin-left: 0;
   
 }
-.round-up , .round-off{
+/*.round-up , .round-off{
     float: left;
     width: 45%; 
     padding: 20px;
@@ -161,12 +147,12 @@ padding-top: 0;
     color: white;
     background-color:hsl(215, 28%, 65%); 
     width: 85px;
-}
+}*/
 button{
     width: 330px;
     margin-left: 12px;
     margin-right: 10px;
-    margin-top: 20px;
+    
 }
 .total-tip, .per-person{
     float: left;
@@ -200,4 +186,27 @@ button{
 }
 #total-amount, #per-person-amount{
     /*border-bottom: 3px double grey;*/
+}
+#tip-display.val, input #tip-range {
+    float: left;
+    width: 50%; 
+    padding: 20px;
+    box-sizing: border-box;
+    padding-left: 25px;
+    margin-bottom: 10px;
+    padding-top: 0;
+    padding-left: 5px;
+}
+#tip-display.val{
+    width: 20px;
+    margin-left: 5px;
+}
+
+
+input[type= "range"]{
+    width: 310px;
+    cursor: pointer;
+}
+input[type= "range"] :not(:last-child){
+    margin-bottom: 5px;
 }

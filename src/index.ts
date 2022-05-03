@@ -1,24 +1,12 @@
 //THIS IS THE ENTRY FILE - WRITE YOUR MAIN LOGIC HERE!
+import { billAmount } from "./htmlResults";
+import { personAmount } from "./htmlResults"
 
-import { helloWorld, Beispiel } from "./myModule";
-import { alertMe } from "./myOtherModule";
 
-console.log(helloWorld);
-customElements.define("my-beispiel", Beispiel);
 
-alertMe();
-
-const myInputValue = document.querySelector<HTMLInputElement>("#myInput");
-
-const myInputValueAlternate = document.querySelector(
-  "#myInput"
-) as HTMLInputElement;
-
-document
-  .querySelector<HTMLInputElement>("#myInput")
-  ?.addEventListener("focus", doSmth);
-
-function doSmth(e: UIEvent) {
-  const val = e.target as HTMLInputElement;
-  console.log(e, val.value);
+function calculate(bill:number, tipPercentage:number, persons:number) :number{
+  return (bill * (tipPercentage / 100) / persons) //+ (bill/persons);
 }
+//console.log(calculate(50, 10, 5));
+
+
