@@ -184,9 +184,9 @@ button{
     padding-bottom: 10px;
     margin-bottom: 8px;
 }
-#total-amount, #per-person-amount{
-    /*border-bottom: 3px double grey;*/
-}
+/*#total-amount, #per-person-amount{
+    border-bottom: 3px double grey;
+}*/
 #tip-display.val, input #tip-range {
     float: left;
     width: 50%; 
@@ -197,16 +197,30 @@ button{
     padding-top: 0;
     padding-left: 5px;
 }
+#tip-range{
+    margin-left: 25px;
+}
 #tip-display.val{
-    width: 20px;
+    width: 30px;
     margin-left: 5px;
+    margin-bottom: 0;
+}
+.tip-selector p{
+    margin-left: 8px;
 }
 
-
 input[type= "range"]{
-    width: 310px;
+    width: 305px;
     cursor: pointer;
 }
 input[type= "range"] :not(:last-child){
     margin-bottom: 5px;
+}
+
+#per-person-amount, #total-amount{
+    border-bottom: 2px double grey;
+    width: 145px;
+}
+#total-amount{
+    padding-left: 3px;
 }
