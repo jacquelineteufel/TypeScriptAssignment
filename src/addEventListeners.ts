@@ -5,17 +5,29 @@ import {
   tipPerPerson,
   output,
   tipAmount,
-  button,
+  
 } from './htmlResults'
 
-billAmount.addEventListener('input', billInput)
-personAmount.addEventListener('input', personInput)
-tipAmount.addEventListener('input', tipInput)
-button.addEventListener('click', calculate)
 
-let bill: number = 0.00
-let persons: number = 1
-let tip: number = 10.00
+billAmount.addEventListener('input', ()=>{billInput();
+    calculate();
+    updateResult();
+})
+personAmount.addEventListener('input', ()=>{personInput();
+    calculate();
+    updateResult();
+})
+tipAmount.addEventListener('input',()=> {tipInput();
+    calculate();
+    updateResult();
+})
+
+
+let bill: number = 1.00;
+let persons: number = 1;
+let tip: number = 0.2;
+let billResult :number;
+let billPerPersonResult :number;
 
 export function billInput() {
   bill = parseFloat(billAmount.value)
@@ -27,36 +39,21 @@ export function personInput() {
   console.log(persons)
 }
 export function tipInput() {
-  tip = parseFloat(tipAmount.value)
-  output.innerText = tip.toString()
+  tip = parseFloat(tipAmount.value);   
+  output.innerText = tip.toString()     
   console.log(tip)
 }
 
 export function calculate() {
-    tip = parseFloat(tipAmount.value)
-  //tipAmount.valuie is always number
-   persons = parseInt(personAmount.value)
-   bill  = parseFloat(billAmount.value)
+    
+ billResult = bill * (tip/100) + bill;
+ billPerPersonResult = billResult / persons;
+  
+}
 
-  if (tip = 0) {
-    alert('amount not set')
-  }
-  if (bill <= 0) {
-    alert('amount not set')
-    return;
-  }
-  if (persons <= 0) {
-    alert('amount not set')
-    return;
-  }
-  let percentageTip :number = 0.01 * tip;
+export function updateResult(){
 
-  let billWithTip :number = bill * (tip /100) + bill;
-  console.log("calculate:" + percentageTip.toFixed(2));
-  tipTotal.innerText = billWithTip.toFixed(2);
-
-
-  let billPerPerson :number = billWithTip / persons;
-  tipPerPerson.innerText = billPerPerson.toFixed(2);
+  tipTotal.innerHTML = `${billResult.toFixed(2)} €`;
+  tipPerPerson.innerHTML =`${billPerPersonResult.toFixed(2)} €`;
 
 }
