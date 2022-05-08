@@ -111,42 +111,6 @@ padding-top: 0;
     margin-left: 0;
   
 }
-/*.round-up , .round-off{
-    float: left;
-    width: 45%; 
-    padding: 20px;
-    box-sizing: border-box;
-    padding-left: 25px;
-    margin-bottom: 10px;
-    padding-top: 0;
-    padding-left: 5px;
-}
-.round-up{
-    padding-right: 2px;
-    padding-left: 50px;
-    margin-top: 10px;
-    
-}
-.round-off{
-    margin-top: 10px;
-}
-.round-off button{
-    margin-left: 25px;
-}
-
-.round-up button{
-    padding-right: 2px;
-    margin-left: 35px;
-    text-align: center;
-}
-.round-up button, .round-off button{
-    margin-top: 10px;
-    border: 1px solid grey;
-    border-radius: 7px;
-    color: white;
-    background-color:hsl(215, 28%, 65%); 
-    width: 85px;
-}*/
 button{
     width: 330px;
     margin-left: 12px;

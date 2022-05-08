@@ -1,3 +1,4 @@
+//Imports der Variablen und Funktionen
 import {
   billAmount,
   personAmount,
@@ -5,30 +6,34 @@ import {
   tipPerPerson,
   output,
   tipAmount,
-  
 } from './htmlResults'
 
+import { calculate, billPerPersonResult, billResult } from './calculation'
 
-billAmount.addEventListener('input', ()=>{billInput();
-    calculate();
-    updateResult();
+//Eventlistener
+billAmount.addEventListener('input', () => {
+  billInput()
+  calculate()
+  updateResult()
 })
-personAmount.addEventListener('input', ()=>{personInput();
-    calculate();
-    updateResult();
+personAmount.addEventListener('input', () => {
+  personInput()
+  calculate()
+  updateResult()
 })
-tipAmount.addEventListener('input',()=> {tipInput();
-    calculate();
-    updateResult();
+tipAmount.addEventListener('input', () => {
+  tipInput()
+  calculate()
+  updateResult()
 })
 
+//Deklarierung 
+export let bill: number = 1.0
+export let persons: number = 1
+export let tip: number = 0.2
 
-let bill: number = 1.00;
-let persons: number = 1;
-let tip: number = 0.2;
-let billResult :number;
-let billPerPersonResult :number;
 
+//Funktionen
 export function billInput() {
   bill = parseFloat(billAmount.value)
   console.log(bill)
@@ -39,21 +44,12 @@ export function personInput() {
   console.log(persons)
 }
 export function tipInput() {
-  tip = parseFloat(tipAmount.value);   
-  output.innerText = tip.toString()     
+  tip = parseFloat(tipAmount.value)
+  output.innerText = tip.toString()
   console.log(tip)
 }
 
-export function calculate() {
-    
- billResult = bill * (tip/100) + bill;
- billPerPersonResult = billResult / persons;
-  
-}
-
-export function updateResult(){
-
-  tipTotal.innerHTML = `${billResult.toFixed(2)} €`;
-  tipPerPerson.innerHTML =`${billPerPersonResult.toFixed(2)} €`;
-
+export function updateResult() {
+  tipTotal.innerHTML = `${billResult.toFixed(2)} €`
+  tipPerPerson.innerHTML = `${billPerPersonResult.toFixed(2)} €`
 }
