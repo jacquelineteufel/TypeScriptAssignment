@@ -6,9 +6,12 @@ import {
   tipPerPerson,
   output,
   tipAmount,
+  currency
 } from './htmlResults'
 
 import { calculate, billPerPersonResult, billResult } from './calculation'
+import { convertCompilerOptionsFromJson } from '../node_modules/typescript/lib/typescript'
+
 
 //Eventlistener
 billAmount.addEventListener('input', () => {
@@ -26,6 +29,8 @@ tipAmount.addEventListener('input', () => {
   calculate()
   updateResult()
 })
+
+
 
 //Deklarierung 
 export let bill: number = 1.0

@@ -4,11 +4,15 @@
 import { billInput} from "./addEventListeners";
 import { personInput} from "./addEventListeners";
 import { tipInput } from "./addEventListeners";
+import { initiateCurrency } from "./currencySelector";
+
 
 //Ausführung der Funktionen
+initiateCurrency();
 billInput();
 personInput();
 tipInput(); 
+
 
 
 
