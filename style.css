@@ -6,8 +6,7 @@
 h1{
     font-size: 20pt;
     text-align: center;
-    margin-top: 10px;
-    margin-bottom:10px;
+    margin: 10px 0 10px 0;
     color: black;
     font-family: 'Dancing Script', cursive;
 }
@@ -31,10 +30,9 @@ body{
 outline-style: solid;
 outline-color: grey;
 border-radius: 7px;
-padding: 15px;
+padding: 0 15px 15px 15px;
 width: 380px;
 background: hsl(0, 0%, 89%);
-padding-top: 0;
 }
 
 .information{
@@ -42,9 +40,7 @@ padding-top: 0;
     border: 1px solid grey;
     width: 360px;
     height: 150px;
-    margin-bottom: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin: 0 10px 20px 10px;
     border-radius: 5px;
 }
 .output{
@@ -52,29 +48,23 @@ padding-top: 0;
     border: 1px solid grey;
     width: 360px;
     height: 300px;
-    margin-bottom: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin: 0 10px 10px 10px;
     border-radius: 5px;
 }
 .bill-amount, .personen{
     float: left;
     width: 50%; 
-    padding: 20px;
+    padding: 0 20px 20px 5px;
     box-sizing: border-box;
-    padding-left: 25px;
     margin-bottom: 10px;
-    padding-top: 0;
-    padding-left: 5px;
+
 }
 .bill-amount{
-    padding-right: 5px;
-    padding-bottom: 10px;
+    padding: 0 5px 10px 0;
     margin-bottom: 5px;
 }
 .bill-amount p, .personen p{
-    margin-top: 10px;
-    margin-bottom: 8px;
+    margin: 10px 0 8px 0;
 }
 .bill-amount p{
     padding-left: 3px;
@@ -82,7 +72,6 @@ padding-top: 0;
 .bill-amount svg, .personen svg{
     float: left;
     height: 22px;
-    /*color: grey;*/
 }
 .personen svg{
     height: 26px;
@@ -94,9 +83,7 @@ padding-top: 0;
   border-bottom: 2px dotted grey;
 }
 .personen{
-    padding-right: 5px;
-    padding-left: 10px;
-    padding-bottom: 10px;
+    padding: 0 5px 10px 10px;
     margin-bottom: 8px;
 }
 
@@ -118,6 +105,8 @@ padding-top: 0;
     padding-right: 5px;
     padding-bottom: 10px;
     margin-bottom: 20px;
+
+    
 }
 .total-tip p, .per-person p{
     margin-top: 10px;
@@ -129,9 +118,7 @@ padding-top: 0;
     padding-left: 3px;
 }
 .per-person{
-    padding-right: 5px;
-    padding-left: 10px;
-    padding-bottom: 10px;
+    padding: 0 5px 10px 10px;
     margin-bottom: 20px;
 }
 #tip-display.val, input #tip-range {
