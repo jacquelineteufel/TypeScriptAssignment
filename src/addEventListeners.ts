@@ -6,7 +6,7 @@ import {
   tipPerPerson,
   output,
   tipAmount,
-  currency
+  button
 } from './htmlResults'
 
 import { calculate, billPerPersonResult, billResult } from './calculation'
@@ -29,6 +29,7 @@ tipAmount.addEventListener('input', () => {
   calculate()
   updateResult()
 })
+button.addEventListener('click', calculateCurrency())
 
 
 

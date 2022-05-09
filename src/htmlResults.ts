@@ -5,7 +5,8 @@ export let tipAmount: HTMLInputElement = <HTMLInputElement>document.getElementBy
 export let output: HTMLInputElement = <HTMLInputElement>document.getElementById("tip-display");
 export let tipPerPerson: HTMLInputElement = <HTMLInputElement>document.getElementById("per-person-amount");
 export let tipTotal: HTMLInputElement = <HTMLInputElement>document.getElementById("total-amount");
-export const currency:  HTMLInputElement = <HTMLInputElement>document.getElementById("currency-selector");
+export const select:  HTMLInputElement = <HTMLInputElement>document.getElementById("currency-selector");
+export const button:  HTMLInputElement = <HTMLInputElement>document.getElementById("currency-calculate-button");
 
 
 

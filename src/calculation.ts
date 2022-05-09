@@ -14,3 +14,6 @@ export function calculate() {
   billPerPersonResult = billResult / persons
 
 }
+export function calculateCurrency(){
+
+}
