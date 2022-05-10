@@ -11,10 +11,6 @@ h1{
     font-family: 'Dancing Script', cursive;
 }
 
-h2{
-    font-family: 'Orbitron', sans-serif;
-}
-
 body{
     /*background: linear-gradient(to right bottom, white,#F7CAC9,  white);*/
     background-color: hsl(215, 28%, 65%);

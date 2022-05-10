@@ -29,7 +29,7 @@ tipAmount.addEventListener('input', () => {
   calculate()
   updateResult()
 })
-button.addEventListener('click', calculateCurrency())
+//button.addEventListener('click', calculateCurrency())
 
 
 

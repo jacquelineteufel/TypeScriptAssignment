@@ -4,6 +4,7 @@
 import { billInput} from "./addEventListeners";
 import { personInput} from "./addEventListeners";
 import { tipInput } from "./addEventListeners";
+import { display, getRateByName, updateRates } from "./api";
 import { initiateCurrency } from "./currencySelector";
 
 
@@ -12,9 +13,8 @@ initiateCurrency();
 billInput();
 personInput();
 tipInput(); 
-
-
-
+updateRates();
+console.log("Test" + getRateByName("AUD"))
 
 
 
