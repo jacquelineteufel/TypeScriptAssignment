@@ -1,8 +1,8 @@
-import { updateRates } from "./api";
+//import { updateRates } from "./api";
 //import { rates } from './api'
 
 export function initiateCurrency(){
-    updateRates();
+    //updateRates();
     //console.log(rates)
     
 }

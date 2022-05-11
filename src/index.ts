@@ -4,8 +4,9 @@
 import { billInput} from "./addEventListeners";
 import { personInput} from "./addEventListeners";
 import { tipInput } from "./addEventListeners";
-import { display, getRateByName, updateRates } from "./api";
 import { initiateCurrency } from "./currencySelector";
+import { currentRate, exchangeRates, updateCurrencies } from "./exchangeRates";
+
 
 
 //Ausführung der Funktionen
@@ -13,8 +14,9 @@ initiateCurrency();
 billInput();
 personInput();
 tipInput(); 
-updateRates();
-console.log("Test" + getRateByName("AUD"))
+updateCurrencies();
+
+
 
 
 

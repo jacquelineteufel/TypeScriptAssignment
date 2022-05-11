@@ -2,16 +2,12 @@
 import {
   billAmount,
   personAmount,
-  tipTotal,
-  tipPerPerson,
   output,
   tipAmount,
   button,
-  tipTotalCurrency,
-  tipPerPersonCurrency,
 } from './htmlResults'
 
-import { calculateTip, billPerPersonResult, billResult, calculateCurrency, billResultCurrency, billPerPersonResultCurrency } from './calculation'
+import { calculateTip, calculateCurrency} from './calculation'
 import { updateResult, updateResultForeignCurrency } from './domManipulation'
 import { convertCompilerOptionsFromJson } from '../node_modules/typescript/lib/typescript'
 
@@ -34,8 +30,8 @@ tipAmount.addEventListener('input', () => {
 })
 button.addEventListener('click', () => {
 calculateCurrency()
+updateResultForeignCurrency()
 })
-
 
 //Deklarierung 
 export let bill: number = 1.0

@@ -1,6 +1,6 @@
-import { select} from "./htmlResults";
+import { selector} from "./htmlResults";
 
-let result : number = 1;
+/*let result : number = 1;
 
 export function updateRates() {
   fetch('https://api.frankfurter.app/latest')
@@ -15,7 +15,7 @@ export function updateRates() {
     entries.forEach(entrie => {
       let option : HTMLOptionElement = document.createElement('option');
       option.innerHTML = `${entrie[0]}`;
-      select.appendChild(option);
+      selector.appendChild(option);
     })
   }
 
@@ -27,10 +27,9 @@ export function updateRates() {
       entries.filter(entrie => {
         if(entrie[0] === rateName){
           result = entrie[1] as number;
-          
-        }
+      
       })
     })
     return result;
   }
-  
+  */
