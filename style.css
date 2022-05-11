@@ -39,7 +39,7 @@ background: hsl(0, 0%, 89%);
     background-color: white;
     border: 1px solid grey;
     width: 360px;
-    height: 177px;
+    height: 187px;
     margin: 0 10px 10px 10px;
     border-radius: 5px;
 }
@@ -151,5 +151,5 @@ input[type= "range"] :not(:last-child){
 }
 #currency-calculate-button{
     width: 337px;
-    margin: 0 5px 20px 8px;
+    margin: 10px 5px 20px 8px;
 }
