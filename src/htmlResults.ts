@@ -22,9 +22,9 @@ tipTotal.value = "€" + (0.00).toFixed(2);
 tipPerPerson.value = "€" + (0.00).toFixed(2);
 tipAmount.value = "0";
 output.value="0";
-tipPerPersonCurrency.value =  (0.00).toFixed(2);
+tipPerPersonCurrency.value = (0.00).toFixed(2);
 tipTotalCurrency.value = (0.00).toFixed(2);
-selector.value = "";
+
 
 
 

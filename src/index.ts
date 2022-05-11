@@ -4,13 +4,12 @@
 import { billInput} from "./addEventListeners";
 import { personInput} from "./addEventListeners";
 import { tipInput } from "./addEventListeners";
-import { initiateCurrency } from "./currencySelector";
-import { currentRate, exchangeRates, updateCurrencies } from "./exchangeRates";
+import { exchangeRates } from "./exchangeRates";
+import { updateCurrencies} from "./currencySelector"
 
 
 
 //Ausführung der Funktionen
-initiateCurrency();
 billInput();
 personInput();
 tipInput(); 

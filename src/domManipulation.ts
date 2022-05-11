@@ -1,8 +1,6 @@
 import { tipTotal, tipPerPerson, tipTotalCurrency, tipPerPersonCurrency, selector } from "./htmlResults"
 import { billResult, billPerPersonResult, billResultCurrency, billPerPersonResultCurrency } from "./calculation"
-import { currentRate, exchangeRates } from "./exchangeRates"
-
-
+import { currentRate } from "./currencySelector"
 
 
 
@@ -13,6 +11,6 @@ export function updateResult() {
   
 
   export function updateResultForeignCurrency() {
-    tipTotalCurrency.innerHTML = `${billResultCurrency} ${currentRate()}`
-    tipPerPersonCurrency.innerHTML = `${billPerPersonResultCurrency} ${currentRate()}`
+    tipTotalCurrency.innerHTML = `${billResultCurrency.toFixed(2)} ${currentRate()}`
+    tipPerPersonCurrency.innerHTML = `${billPerPersonResultCurrency.toFixed(2)} ${currentRate()}`
   }
