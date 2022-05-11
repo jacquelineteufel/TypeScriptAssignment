@@ -7,7 +7,9 @@ export let tipPerPerson: HTMLInputElement = <HTMLInputElement>document.getElemen
 export let tipTotal: HTMLInputElement = <HTMLInputElement>document.getElementById("total-amount");
 export const select:  HTMLInputElement = <HTMLInputElement>document.getElementById("currency-selector");
 export const button:  HTMLInputElement = <HTMLInputElement>document.getElementById("currency-calculate-button");
-export const show:  HTMLInputElement = <HTMLInputElement>document.getElementById("total-amount-foreign-currency")
+export let tipPerPersonCurrency: HTMLInputElement = <HTMLInputElement>document.getElementById("per-person-amount-foreign-currency");
+export let tipTotalCurrency: HTMLInputElement = <HTMLInputElement>document.getElementById("total-amount-foreign-currency");
+
 
 
 
@@ -18,7 +20,9 @@ tipTotal.value = "€" + (0.00).toFixed(2);
 tipPerPerson.value = "€" + (0.00).toFixed(2);
 tipAmount.value = "0";
 output.value="0";
-show.value="0";
+tipPerPersonCurrency.value = "€" + (0.00).toFixed(2);
+tipTotalCurrency.value = "€" + (0.00).toFixed(2);
+
 
 
 

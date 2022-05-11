@@ -1,4 +1,4 @@
-import { select, show} from "./htmlResults";
+import { select} from "./htmlResults";
 
 let result : number = 1;
 
@@ -27,6 +27,7 @@ export function updateRates() {
       entries.filter(entrie => {
         if(entrie[0] === rateName){
           result = entrie[1] as number;
+          
         }
       })
     })

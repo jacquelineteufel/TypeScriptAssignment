@@ -6,38 +6,41 @@ import {
   tipPerPerson,
   output,
   tipAmount,
-  button
+  button,
+  tipTotalCurrency,
+  tipPerPersonCurrency,
 } from './htmlResults'
 
-import { calculate, billPerPersonResult, billResult } from './calculation'
+import { calculateTip, billPerPersonResult, billResult, calculateCurrency, billResultCurrency, billPerPersonResultCurrency } from './calculation'
+import { updateResult, updateResultForeignCurrency } from './domManipulation'
 import { convertCompilerOptionsFromJson } from '../node_modules/typescript/lib/typescript'
 
 
 //Eventlistener
 billAmount.addEventListener('input', () => {
   billInput()
-  calculate()
+  calculateTip()
   updateResult()
 })
 personAmount.addEventListener('input', () => {
   personInput()
-  calculate()
+  calculateTip()
   updateResult()
 })
 tipAmount.addEventListener('input', () => {
   tipInput()
-  calculate()
+  calculateTip()
   updateResult()
 })
-//button.addEventListener('click', calculateCurrency())
-
+button.addEventListener('click', () => {
+calculateCurrency()
+})
 
 
 //Deklarierung 
 export let bill: number = 1.0
 export let persons: number = 1
 export let tip: number = 0.2
-
 
 //Funktionen
 export function billInput() {
@@ -53,9 +56,4 @@ export function tipInput() {
   tip = parseFloat(tipAmount.value)
   output.innerText = tip.toString()
   console.log(tip)
-}
-
-export function updateResult() {
-  tipTotal.innerHTML = `${billResult.toFixed(2)} €`
-  tipPerPerson.innerHTML = `${billPerPersonResult.toFixed(2)} €`
 }
