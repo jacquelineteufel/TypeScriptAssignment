@@ -10,8 +10,6 @@ h1{
     color: black;
     font-family: 'Dancing Script', cursive;
 }
-
-
 body{
     /*background: linear-gradient(to right bottom, white,#F7CAC9,  white);*/
     background-color: hsl(215, 28%, 65%);
@@ -19,8 +17,6 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    
-    
 }
 .wrapper
 {
@@ -31,12 +27,11 @@ padding: 0 15px 15px 15px;
 width: 380px;
 background: hsl(0, 0%, 89%);
 }
-
 .information{
     background-color: white;
     border: 1px solid grey;
     width: 360px;
-    height: 150px;
+    height: 235px;
     margin: 0 10px 20px 10px;
     border-radius: 5px;
 }
@@ -44,21 +39,21 @@ background: hsl(0, 0%, 89%);
     background-color: white;
     border: 1px solid grey;
     width: 360px;
-    height: 300px;
+    height: 177px;
     margin: 0 10px 10px 10px;
     border-radius: 5px;
 }
 .bill-amount, .personen{
     float: left;
-    width: 50%; 
-    padding: 0 20px 20px 5px;
+    width: 165px; 
     box-sizing: border-box;
-    margin-bottom: 10px;
-
 }
 .bill-amount{
-    padding: 0 5px 10px 0;
-    margin-bottom: 5px;
+    margin: 5px 5px 15px 10px;
+}
+.personen{
+    margin-right: 10px;
+    margin: 5px 0px 15px 15px;
 }
 .bill-amount p, .personen p{
     margin: 10px 0 8px 0;
@@ -73,60 +68,44 @@ background: hsl(0, 0%, 89%);
 .personen svg{
     height: 26px;
 }
-
 .bill-amount input, .personen input{
     width: 125px;
     border: none;
   border-bottom: 2px dotted grey;
 }
-.personen{
-    padding: 0 5px 10px 10px;
+.tip-selector {
+    margin-top: 91px;
+    margin-bottom:15px;
+}
+.tip-selector p{
+    height: 22px;
+    margin-left: 10px;
     margin-bottom: 8px;
 }
-
 #textInput{
     width: 20px;
     height: 10px;
     margin-left: 0;
-  
 }
-.total-tip, .per-person{
+.total-tip, .per-person, .total-tip-foreign-currency, .per-person-foreign-currency {
     float: left;
-    width: 50%; 
-    padding: 0 20px 20px 5px;
-    box-sizing: border-box;
-    margin-bottom: 10px;
-   
+    width: 165px; 
+    box-sizing: border-box; 
 }
-.total-tip{
-    padding-right: 5px;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-
-    
+.total-tip, .total-tip-foreign-currency{
+    margin: 5px 5px 15px 10px;
 }
-.total-tip p, .per-person p{
-    margin-top: 10px;
-    margin-bottom: 8px;
+.total-tip p, .per-person p, .total-tip-foreign-currency p, .per-person-foreign-currency p{
+    margin: 0px 0px 8px 0;
     border-bottom: 1px solid grey;
     width: 145px;
 }
-.total-tip p{
-    padding-left: 3px;
+.per-person, .per-person-foreign-currency{
+    margin-right: 10px;
+    margin: 5px 0px 15px 15px;
 }
-.per-person{
-    padding: 0 5px 10px 10px;
-    margin-bottom: 20px;
-}
-#tip-display.val, input #tip-range {
-    float: left;
-    width: 50%; 
-    padding: 20px;
-    box-sizing: border-box;
-    padding-left: 25px;
-    margin-bottom: 10px;
-    padding-top: 0;
-    padding-left: 5px;
+#tip-range{
+    width: 318px;
 }
 #tip-display{
     margin-left: 10px;
@@ -136,10 +115,6 @@ background: hsl(0, 0%, 89%);
     margin-left: 5px;
     margin-bottom: 0;
 }
-.tip-selector p{
-    margin-left: 8px;
-}
-
 input[type= "range"]{
     width: 308px;
     cursor: pointer;
@@ -147,76 +122,34 @@ input[type= "range"]{
 input[type= "range"] :not(:last-child){
     margin-bottom: 5px;
 }
-
-#per-person-amount, #total-amount{
+#per-person-amount, #total-amount, #per-person-amount-foreign-currency, #total-amount-foreign-currency{
     border-bottom: 2px double grey;
     width: 145px;
 }
-#total-amount{
-    padding-left: 3px;
-}
 .fixed-currency, .img-arrow, .currency-selector {
     float: left; 
-    margin: 0px 2% 20px 0px;
     padding: 0px 20px 0px 10px;
     box-sizing: border-box;
-   
 }
 .fixed-currency, .currency-selector{
     width: 35%;
+    margin: 15px 10px 15px 10px;
 }
 .fixed-currency p, .currency-selector p{
     margin-top: 0;
     margin-bottom: 0;
-
+    padding-left: 3px;
 }
 .img-arrow{
     width: 20%;
     align-items: center;
-    padding: 0 28px 0 28px;
+    padding: 0 25px 0 20px;
+    margin-top: 20px;
 }
-
 .currency-selector {
-    margin-right: 0;
-}
-.total-tip-foreign-currency, .per-person-foreign-currency{
-    float: left;
-    width: 50%; 
-    padding: 20px;
-    box-sizing: border-box;
-    padding-left: 25px;
-    margin-bottom: 20px;
-    padding-top: 0;
-    padding-left: 5px;
-}
-.total-tip-foreign-currency{
-    padding-right: 5px;
-    padding-bottom: 10px;
-    margin-bottom: 5px;
-}
-.total-tip-foreign-currency p, .per-person-foreign-currency p{
-    margin-top: 10px;
-    margin-bottom: 8px;
-    border-bottom: 1px solid grey;
-    width: 145px;
-}
-.total-tip-foreign-currency p{
-    padding-left: 3px;
-}
-.per-person-foreign-currency{
-    padding-right: 5px;
-    padding-left: 10px;
-    padding-bottom: 10px;
-    margin-bottom: 8px;
-}
-#per-person-amount-foreign-currency, #total-amount-foreign-currency{
-    border-bottom: 2px double grey;
-    width: 145px;
-}
-#total-amount-foreign-currency{
-    padding-left: 3px;
+    margin: 15px 5px 15px 0px;
 }
 #currency-calculate-button{
-    width: 350px;
-    margin: 0 5px 20px 5px;
+    width: 337px;
+    margin: 0 5px 20px 8px;
 }

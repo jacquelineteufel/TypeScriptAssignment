@@ -9,17 +9,16 @@ export let billPerPersonResult: number
 export let billPerPersonResultCurrency :number 
 
 
-
-
 //Rechnungsfunktion
 export function calculateTip() {
-  //updateRates();
+  updateRates();
   billResult = bill * (tip / 100) + bill
   billPerPersonResult = billResult / persons
 
 }
 export function calculateCurrency(){
   updateRates();
+
   billResultCurrency = billResult // * test
   console.log("1Ergebnis" + billResultCurrency)
   billPerPersonResultCurrency = billPerPersonResult // * test

@@ -7,6 +7,6 @@ export function updateResult() {
   }
   
   export function updateResultForeignCurrency() {
-    tipTotalCurrency.innerHTML = `${billResultCurrency.toFixed(2)} €`
-    tipPerPersonCurrency.innerHTML = `${billPerPersonResultCurrency.toFixed(2)} €`
+    tipTotalCurrency.innerHTML = `${billResultCurrency} €`
+    tipPerPersonCurrency.innerHTML = `${billPerPersonResultCurrency} €`
   }
