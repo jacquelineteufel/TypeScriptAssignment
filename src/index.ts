@@ -5,7 +5,7 @@ import { billInput} from "./addEventListeners";
 import { personInput} from "./addEventListeners";
 import { tipInput } from "./addEventListeners";
 import { exchangeRates } from "./exchangeRates";
-import { updateCurrencies} from "./currencySelector"
+import { updateCurrencies} from "./currencies"
 
 
 
