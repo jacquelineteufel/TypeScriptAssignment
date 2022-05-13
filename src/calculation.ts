@@ -1,6 +1,6 @@
 //Imports
 import { bill, persons, tip } from './addEventListeners'
-import { getRateByName, currentRate } from './currencySelector'
+import { getRateByName, currentRate } from './currencies'
 
 
 //Deklarierung
