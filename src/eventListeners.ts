@@ -1,12 +1,5 @@
 //Imports der Variablen und Funktionen
-import {
-  billAmount,
-  personAmount,
-  output,
-  tipAmount,
-  button,
-} from './htmlResults'
-
+import { billAmount, personAmount, output, tipAmount, button } from './htmlResults'
 import { calculateTip, calculateCurrency} from './calculation'
 import { updateResult, updateResultForeignCurrency } from './domManipulation'
 import { convertCompilerOptionsFromJson } from '../node_modules/typescript/lib/typescript'

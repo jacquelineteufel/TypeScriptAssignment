@@ -1,5 +1,5 @@
 //Imports
-import { bill, persons, tip } from './addEventListeners'
+import { bill, persons, tip } from './eventListeners'
 import { getRateByName, currentRate } from './currencies'
 
 
