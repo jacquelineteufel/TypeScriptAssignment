@@ -1,5 +1,5 @@
 
-//Währungen und Währungsfaktoren von app.frankfurter.api (Stand: 13.05.2022)
+//Währungen und Währungsfaktoren von "https://www.frankfurter.app/docs/" (Stand: 13.05.2022)
 export const exchangeRates = {
     "amount": 1,
     "base": "EUR",
