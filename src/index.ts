@@ -2,15 +2,14 @@
 
 //Imports
 import { billInput, personInput, tipInput } from "./eventListeners";
-import { exchangeRates } from "./exchangeRates";
-import { updateCurrencies} from "./currencies"
+import { updateCurrencies } from "./currencies"
 
 
 
 //Ausführung der Funktionen
 billInput();
 personInput();
-tipInput(); 
+tipInput();
 updateCurrencies();
 
 
